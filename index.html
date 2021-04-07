@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 
@@ -13,26 +15,24 @@
 
 <body>
     <header class="header center">
-        <nav class="header__nav">
-            <button class="button header__button">
-                <span class="button__line"></span>
-                <span class="button__line"></span>
-                <span class="button__line"></span>
+        <button class="button header__button">
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+        </button>
+
+        <div class="logo header__logo">
+            <img src="img/logo.svg" alt="" class="logo__img">
+        </div>
+        <div class="search-block">
+            <input class="header__search" type="search" name="search" placeholder="Search">
+            <button class="button search-button" type="submit">
+                <svg class="icon search-block__icon" width="19" height="19">
+                    <use xlink:href="img/icons.svg#search"></use>
+                </svg>
             </button>
+        </div>
 
-            <div class="logo header__logo">
-                <img src="img/logo.svg" alt="" class="logo__img">
-            </div>
-            <div class="search-block">
-                <input class="header__search" type="search" name="search" placeholder="Search">
-                <button class="button search-button" type="submit">
-                    <svg class="icon search-block__icon" width="19" height="19">
-                        <use xlink:href="img/icons.svg#search"></use>
-                    </svg>
-
-                </button>
-            </div>
-        </nav>
         <div class="header__links">
             <a class="link" href="#">
                 <svg class="icon icon-link" width="27" height="20">
@@ -50,10 +50,146 @@
                 </svg>
             </a>
             <a class="link" href="#">
-                <img src="img/userpic.png" alt="">
+                <img class="user-img" src="img/userpic.png" alt="Фото пользователя" width="40" height="40">
             </a>
         </div>
     </header>
+
+    <div class="aside-block">
+        <aside class="aside center">
+            <nav class="nav aside__nav">
+                <ul class="list aside__list aside__list_top">
+                    <li class="item aside__item">
+                        <a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="20" height="19">
+                                <use xlink:href="img/icons.svg#home"></use>
+                            </svg>
+                            <p class="text">Home</p>
+                        </a>
+                    </li>
+                    <li class="item aside__item">
+                        <a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="16" height="21">
+                                <use xlink:href="img/icons.svg#trending"></use>
+                            </svg>
+                            <p class="text">Trending</p>
+                        </a>
+                    </li>
+                    <li class="item aside__item">
+                        <a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="18" height="18">
+                                <use xlink:href="img/icons.svg#subscriptions"></use>
+                            </svg>
+                            <p class="text">Subscriptions</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="list aside__list">
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="20" height="16">
+                                <use xlink:href="img/icons.svg#library"></use>
+                            </svg>
+                            <p class="text">Library</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="20" height="18">
+                                <use xlink:href="img/icons.svg#history"></use>
+                            </svg>
+                            <p class="text">History</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="17" height="19">
+                                <use xlink:href="img/icons.svg#watch"></use>
+                            </svg>
+                            <p class="text">Watch later</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="19" height="18">
+                                <use xlink:href="img/icons.svg#favourites"></use>
+                            </svg>
+                            <p class="text">Favourites</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="18" height="17">
+                                <use xlink:href="img/icons.svg#like"></use>
+                            </svg>
+                            <p class="text">Liked videos</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="18" height="20">
+                                <use xlink:href="img/icons.svg#music"></use>
+                            </svg>
+                            <p class="text">Music</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="22" height="16">
+                                <use xlink:href="img/icons.svg#games"></use>
+                            </svg>
+                            <p class="text">Games</p>
+                        </a></li>
+                    <li class="item aside__item"><a class="link aside__link" href="#">
+                            <svg class="icon nav__icon" width="14" height="8">
+                                <use xlink:href="img/icons.svg#show"></use>
+                            </svg>
+                            <p class="text">Show more</p>
+                        </a></li>
+                </ul>
+            </nav>
+            <h3 class="heading aside__heading">Subscriptions</h3>
+            <ul class="list aside__list">
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/gussi.png" alt="">
+                        <p class="text">Gussie Singleton</p>
+                    </a>
+                </li>
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/nora.png" alt="">
+                        <p class="text">Nora Francis</p>
+                    </a>
+                </li>
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/belle.png" alt="">
+                        <p class="text">Belle Briggs</p>
+                    </a>
+                </li>
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/eunice.png" alt="">
+                        <p class="text">Eunice Cortez</p>
+                    </a>
+                </li>
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/eunice.png" alt="">
+                        <p class="text">Emma Hanson</p>
+                    </a>
+                </li>
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <img class="ava-img" src="img/leah.png" alt="">
+                        <p class="text">Leah Berry</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list aside__list aside__list_bottom">
+                <li class="item aside__item">
+                    <a class="link aside__link" href="#">
+                        <svg class="icon nav__icon" width="19" height="20">
+                            <use xlink:href="img/icons.svg#setting"></use>
+                        </svg>
+                        <p class="text acide-text-bottom">Setting</p>
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+    </div>
+
 </body>
 
 </html>

@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .center {
   padding-right: calc(50% - 925px);
   padding-left: calc(50% - 925px);
@@ -19,18 +25,28 @@
   text-decoration: none;
 }
 
+.list {
+  list-style-type: none;
+}
+
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.user-img {
+  border-radius: 50%;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +103,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 38px;
+  margin-left: 5%;
 }
 
 .button__line {
@@ -109,6 +127,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: auto;
 }
 
 .search-button {
@@ -136,5 +155,63 @@
 
 .icon-link:hover {
   opacity: 0.6;
+}
+
+.aside__list_top {
+  margin-bottom: 60px;
+}
+
+.aside__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside__link:hover .text {
+  color: #FF0000;
+}
+
+.aside__link:hover .icon {
+  fill: #FF0000;
+  opacity: 1;
+}
+
+.aside__heading {
+  margin-top: 58px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.nav__icon {
+  opacity: 24%;
+  margin-right: 13px;
+}
+
+.aside__item {
+  margin-bottom: 29px;
+}
+
+.aside__list_top .aside__item {
+  margin-bottom: 28px;
+}
+
+.acide-text-bottom {
+  color: #C2C2C2;
+}
+
+.aside__list_bottom {
+  margin-top: 104px;
+}
+
+.ava-img {
+  margin-right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
